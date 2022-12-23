@@ -1,8 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:moviemania/ui/HomePage.dart';
-import 'package:moviemania/ui/TabHome.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:moviemania/ui/auth/splash.dart';
+import 'package:moviemania/ui/home/TabHome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        textTheme: GoogleFonts.ralewayTextTheme(),
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.amber,
 
       ),
-      home: TabHome(),
+      home: SplashFuturePage(),
     );
   }
 }

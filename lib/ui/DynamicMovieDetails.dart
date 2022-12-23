@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MovieDetails extends StatefulWidget {
   final title;
@@ -51,7 +52,7 @@ class _MovieDetailsState extends State<MovieDetails> {
                         child: Column(
                           children:  <Widget>[
                             Text(
-                                widget.title,
+                                widget.title, style: GoogleFonts.raleway(),
                                 textAlign: TextAlign.left),
                           ],
                         )),
@@ -66,7 +67,7 @@ class _MovieDetailsState extends State<MovieDetails> {
                 ),
               ],
             ),
-            Text(widget.overview),
+            Text(widget.overview, style: GoogleFonts.raleway(),),
           ],
         ),
       ),

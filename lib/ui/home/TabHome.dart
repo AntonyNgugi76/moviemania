@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:moviemania/models/model.dart';
-import 'package:moviemania/ui/HomePage.dart';
+import 'package:moviemania/ui/home/HomePage.dart';
 import 'package:moviemania/ui/Upcoming.dart';
-import 'package:moviemania/ui/moviewlist.dart';
+import 'package:moviemania/ui/PopularMovies.dart';
 import 'package:moviemania/ui/topRated.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
@@ -16,7 +17,7 @@ class TabHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     _controller = PersistentTabController(initialIndex: 2);
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
         statusBarColor: Colors.amber
     ));
     return PersistentTabView(
@@ -37,11 +38,11 @@ class TabHome extends StatelessWidget {
       ),
       popAllScreensOnTapOfSelectedTab: true,
       popActionScreens: PopActionScreensType.all,
-      itemAnimationProperties: ItemAnimationProperties( // Navigation Bar's items animation properties.
+      itemAnimationProperties: const ItemAnimationProperties( // Navigation Bar's items animation properties.
         duration: Duration(milliseconds: 200),
         curve: Curves.ease,
       ),
-      screenTransitionAnimation: ScreenTransitionAnimation( // Screen transition animation on change of selected tab.
+      screenTransitionAnimation: const ScreenTransitionAnimation( // Screen transition animation on change of selected tab.
         animateTabTransition: true,
         curve: Curves.ease,
         duration: Duration(milliseconds: 200),
@@ -55,7 +56,7 @@ List<Widget> _buildScreens() {
 
     MovieList(),
     TopRatedMovies(),
-    HomePage(),
+    const HomePage(),
     UpcomingMovies(),
     UpcomingMovies(),
   ];
@@ -65,31 +66,31 @@ List<PersistentBottomNavBarItem> _navBarsItems() {
   return [
 
     PersistentBottomNavBarItem(
-      icon: Icon(CupertinoIcons.arrow_2_circlepath),
+      icon: const Icon(CupertinoIcons.arrow_2_circlepath),
       title: ("Popular"),
       activeColorPrimary: Colors.amber,
       inactiveColorPrimary: CupertinoColors.black,
     ),
     PersistentBottomNavBarItem(
-      icon: Icon(CupertinoIcons.star),
+      icon: const Icon(CupertinoIcons.star),
       title: ("Top Rated"),
       activeColorPrimary: Colors.amber,
       inactiveColorPrimary: CupertinoColors.black,
     ),
     PersistentBottomNavBarItem(
-      icon: Icon(CupertinoIcons.home),
+      icon: const Icon(CupertinoIcons.home),
       title: ("Home"),
       activeColorPrimary: Colors.amber,
       inactiveColorPrimary: CupertinoColors.black,
     ),
     PersistentBottomNavBarItem(
-      icon: Icon(CupertinoIcons.download_circle),
+      icon: const Icon(CupertinoIcons.download_circle),
       title: ("Upcoming"),
       activeColorPrimary: Colors.amber,
       inactiveColorPrimary: CupertinoColors.black,
     ),
     PersistentBottomNavBarItem(
-      icon: Icon(CupertinoIcons.cube),
+      icon: const Icon(CupertinoIcons.cube),
       title: ("Genres"),
       activeColorPrimary: Colors.amber,
       inactiveColorPrimary: CupertinoColors.black,
