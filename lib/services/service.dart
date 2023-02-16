@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart'as http;
 import 'dart:convert';
 
-import 'package:moviemania/models/model.dart';
+import 'package:moviemania/models/moviesmodel.dart';
 
 
 class MovieApiProvider {

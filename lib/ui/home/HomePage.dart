@@ -9,7 +9,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:moviemania/blocs/bloc.dart';
-import 'package:moviemania/models/model.dart';
+import 'package:moviemania/models/moviesmodel.dart';
 import 'package:moviemania/ui/DynamicMovieDetails.dart';
 import 'package:moviemania/ui/home/TabHome.dart';
 import 'package:moviemania/ui/PopularMovies.dart';
@@ -252,7 +252,7 @@ class _HomePageState extends State<HomePage> {
                       child: Text(
                         'Popular Movies',
                         style: GoogleFonts.raleway(
-                          textStyle: TextStyle(color: Colors.black,
+                          textStyle: const TextStyle(color: Colors.black,
                               fontSize: 18,
                               letterSpacing: .5),
                         ),
@@ -266,7 +266,7 @@ class _HomePageState extends State<HomePage> {
                       child: Text(
                         'View More >',
                         style: GoogleFonts.raleway(
-                          textStyle: TextStyle(fontSize: 15,
+                          textStyle: const TextStyle(fontSize: 15,
                               color: Colors.amber),
                         ),),
                       onTap: () {
@@ -279,7 +279,9 @@ class _HomePageState extends State<HomePage> {
                   elevation: 0,
                   child: SizedBox(
                     height: 190,
-                    child: StreamBuilder(
+                    child:
+
+                    StreamBuilder(
                       stream: bloc.allMovies,
                       builder: (BuildContext context,
                           AsyncSnapshot<ItemModel> snapshot) {
@@ -314,7 +316,7 @@ class _HomePageState extends State<HomePage> {
                                           },
                                           child: ClipRRect(
                                             borderRadius:
-                                            BorderRadius.only(topRight: Radius.circular(15.0)),
+                                            const BorderRadius.only(topRight: Radius.circular(15.0)),
                                             child: Column(
                                               children: [
                                                 Image.network(
@@ -342,7 +344,7 @@ class _HomePageState extends State<HomePage> {
                     InkWell(
                       child: Text(
                         'Top Rated Movies',
-                        style: GoogleFonts.raleway(textStyle: TextStyle(
+                        style: GoogleFonts.raleway(textStyle: const TextStyle(
                             fontSize: 18, fontFamily: 'Jost'),
                         ),),
                       onTap: () {
@@ -352,7 +354,7 @@ class _HomePageState extends State<HomePage> {
                     InkWell(
                       child: Text(
                         'View More >',
-                        style: GoogleFonts.raleway(textStyle: TextStyle(
+                        style: GoogleFonts.raleway(textStyle: const TextStyle(
                             fontSize: 15, color: Colors.amber),
                         ),),
                       onTap: () {

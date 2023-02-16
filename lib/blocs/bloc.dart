@@ -1,7 +1,7 @@
 
 
 
-import 'package:moviemania/models/model.dart';
+import 'package:moviemania/models/moviesmodel.dart';
 import 'package:moviemania/repository/repository.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:rxdart/subjects.dart';
@@ -11,7 +11,7 @@ class MoviesBloc {
   final _moviesFetcher = PublishSubject<ItemModel>();
 
 
-  Observable<ItemModel> get allMovies => _moviesFetcher.stream;
+  Stream<ItemModel> get allMovies => _moviesFetcher.stream;
 
 
   fetchAllMovies() async {
@@ -32,7 +32,7 @@ class UpcomingBloc{
   final _repository = Repository();
   final _upComingMoviesFetcher= PublishSubject<Upcoming>();
 
-  Observable<Upcoming> get allUpcomingMovies=> _upComingMoviesFetcher.stream;
+  Stream<Upcoming> get allUpcomingMovies=> _upComingMoviesFetcher.stream;
   fetchUpcomingMovies() async{
     Upcoming upcoming= await _repository.fetchUpcomingMovies();
     _upComingMoviesFetcher.sink.add(upcoming);
@@ -44,11 +44,15 @@ class UpcomingBloc{
 }
 final upcomingbloc = UpcomingBloc();
 
+
+
+
+
 class TopRatedMoviesBloc{
   final _repository = Repository();
   final _topRatedMoviesFetcher = PublishSubject<TopRated>();
 
-  Observable<TopRated> get allTopRatedMovies=> _topRatedMoviesFetcher.stream;
+  Stream<TopRated> get allTopRatedMovies=> _topRatedMoviesFetcher.stream;
 
   fetchTopRatedMovies() async{
     TopRated topRated = await _repository.fetchTopRatedMovies();

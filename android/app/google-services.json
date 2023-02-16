@@ -1,0 +1,155 @@
+{
+  "project_info": {
+    "project_number": "326402988845",
+    "firebase_url": "https://canvas-griffin-233009.firebaseio.com",
+    "project_id": "canvas-griffin-233009",
+    "storage_bucket": "canvas-griffin-233009.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326402988845:android:7c78a6cc66509326e951a4",
+        "android_client_info": {
+          "package_name": "com.example.bloclib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326402988845-e8fouo4mu97a9rkdkstddevsu7e57n87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqNWyFZf695ep8FJA0rPiNy2D09CAmWPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326402988845-e8fouo4mu97a9rkdkstddevsu7e57n87.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "326402988845-5hcqkrmibe0l1a04hnma8853ds48ianf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wamuti.markets"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326402988845:android:dd8b7f7af71216f7e951a4",
+        "android_client_info": {
+          "package_name": "com.example.movieania"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326402988845-e8fouo4mu97a9rkdkstddevsu7e57n87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqNWyFZf695ep8FJA0rPiNy2D09CAmWPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326402988845-e8fouo4mu97a9rkdkstddevsu7e57n87.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "326402988845-5hcqkrmibe0l1a04hnma8853ds48ianf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wamuti.markets"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326402988845:android:82a5ac7496b87acde951a4",
+        "android_client_info": {
+          "package_name": "com.example.spinach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326402988845-e8fouo4mu97a9rkdkstddevsu7e57n87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqNWyFZf695ep8FJA0rPiNy2D09CAmWPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326402988845-e8fouo4mu97a9rkdkstddevsu7e57n87.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "326402988845-5hcqkrmibe0l1a04hnma8853ds48ianf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wamuti.markets"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326402988845:android:8c2d324a1d42cc99e951a4",
+        "android_client_info": {
+          "package_name": "com.ui_craft.gib_agency"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326402988845-e8fouo4mu97a9rkdkstddevsu7e57n87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqNWyFZf695ep8FJA0rPiNy2D09CAmWPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326402988845-e8fouo4mu97a9rkdkstddevsu7e57n87.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "326402988845-5hcqkrmibe0l1a04hnma8853ds48ianf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wamuti.markets"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

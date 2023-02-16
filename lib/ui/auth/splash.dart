@@ -5,6 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
+import 'package:moviemania/ui/auth/Login.dart';
 import 'package:moviemania/ui/home/TabHome.dart';
 
 class SplashFuturePage extends StatefulWidget {
@@ -57,7 +58,7 @@ class _SplashFuturePageState extends State<SplashFuturePage> {
               FloatingActionButton(clipBehavior: Clip.none,
                   child: Icon(CupertinoIcons.arrow_right),
                   onPressed: (){
-                Get.to(()=>TabHome());
+                Get.to(()=>Login());
 
               })
         ]));

@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:moviemania/models/model.dart';
+import 'package:moviemania/models/moviesmodel.dart';
 import 'package:moviemania/ui/home/HomePage.dart';
 import 'package:moviemania/ui/Upcoming.dart';
 import 'package:moviemania/ui/PopularMovies.dart';

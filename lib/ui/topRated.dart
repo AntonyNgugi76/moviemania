@@ -2,7 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:moviemania/blocs/bloc.dart';
-import 'package:moviemania/models/model.dart';
+import 'package:moviemania/models/moviesmodel.dart';
 
 class TopRatedMovies extends StatelessWidget {
   @override

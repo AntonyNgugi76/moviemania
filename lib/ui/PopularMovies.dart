@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:moviemania/blocs/bloc.dart';
-import 'package:moviemania/models/model.dart';
+import 'package:moviemania/models/moviesmodel.dart';
 import 'package:moviemania/ui/DynamicMovieDetails.dart';
 
 class MovieList extends StatelessWidget {

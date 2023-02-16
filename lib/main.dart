@@ -1,11 +1,32 @@
 
 import 'package:flutter/material.dart';
+// import 'package:fteam_authentication_firebase/fteam_authentication_firebase.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:moviemania/firebase_options.dart';
 import 'package:moviemania/ui/auth/splash.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:moviemania/ui/home/TabHome.dart';
 
-void main() {
+Future<void> main()  async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+
+  // startFirebaseDatasource(
+  //   ProviderOptions(
+  //     appleClientId: 'br.com.example',
+  //     appleRedirectUri: Uri.parse('https://exemplo.com'),
+  //   ),
+  //   firebaseOptions: const FirebaseOption(
+  //     appId: '1:326402988845:android:7c78a6cc66509326e951a4',
+  //     apiKey: 'AIzaSyBZdyTGdhRbIOAQ4HXn89EoLC4S-k0nR4c',
+  //     projectId: 'canvas-griffin-233009',
+  //     messagingSenderId: '326402988845',
+  //   ),
+  // );
   runApp(const MyApp());
 }
 
@@ -16,10 +37,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        textTheme: GoogleFonts.ralewayTextTheme(),
+        textTheme: GoogleFonts.ralewayTextTheme(
+        ),
+        useMaterial3: true,
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the

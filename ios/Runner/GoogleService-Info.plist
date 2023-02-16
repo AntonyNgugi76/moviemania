@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>326402988845-j47us23jd71q3j22opsiqo721kll0gqi.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.326402988845-j47us23jd71q3j22opsiqo721kll0gqi</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>326402988845-ljeejnsmv26kg95j4f64sirstci5p31i.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCZGuPQ_PncWa72yKfcoyJg4AlBQ2QdOiU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>326402988845</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.movieania</string>
+	<key>PROJECT_ID</key>
+	<string>canvas-griffin-233009</string>
+	<key>STORAGE_BUCKET</key>
+	<string>canvas-griffin-233009.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:326402988845:ios:b73b9221d7f38e6ee951a4</string>
+	<key>DATABASE_URL</key>
+	<string>https://canvas-griffin-233009.firebaseio.com</string>
+</dict>
+</plist>

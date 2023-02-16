@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:moviemania/models/model.dart';
+import 'package:moviemania/models/moviesmodel.dart';
 import 'package:moviemania/services/service.dart';
 
 
